@@ -32,8 +32,8 @@ jobs:
       - name: Install Node dependencies
         run: yarn
 
-      - name: Build & prerender
-        run: yarn build:prerender
+      - name: Build
+        run: yarn build:release
 
       - name: Run tests
         run: cargo make verify_only

@@ -1,14 +1,18 @@
-# Seed Quickstart with Webpack
+# Seed RealWorld with Dark lang
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/745c7b1d-5894-4f58-be28-e730a11e1ff4/deploy-status)](https://app.netlify.com/sites/quickstart-webpack/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58c3554c-2e5e-4f87-8c5a-8560db483865/deploy-status)](https://app.netlify.com/sites/seed-realworld-darklang/deploys)
 
-<!-- prettier-ignore -->
-> I want to write fast, reliable and efficient web apps. Quickly.  \
-And I like Rust and documentation.
+[**LIVE DEMO**: seed-realworld-darklang.netlify.com](https://seed-realworld-darklang.netlify.com/)
+
+This repo contains a [RealWorld](https://github.com/gothinkster/realworld) example, where:
+  - [Seed](https://seed-rs.org/) frontend is based on [seed-rs-realworld](https://github.com/seed-rs/seed-rs-realworld) and  [seed-quickstart-webpack](https://github.com/seed-rs/seed-quickstart-webpack).
+  - Backend is written in [Dark lang](https://darklang.com/).
+
 
 ---
+WIP
 
-[**LIVE DEMO**: quickstart-webpack.seed-rs.org](https://quickstart-webpack.seed-rs.org)
+The original quickstart's readme:
 
 Main components:
 
