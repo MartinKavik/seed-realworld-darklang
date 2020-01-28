@@ -5,15 +5,14 @@
   "repository": "https://github.com/MartinKavik/seed-quickstart-webpack",
   "license": "MIT",
   "scripts": {
-    "start": "yarn generate:css_classes && webpack-dev-server --config configs/webpack.config.js -d",
-    "start:release": "yarn generate:css_classes && webpack-dev-server --config configs/webpack.config.js --mode=production",
-    "build": "yarn generate:css_classes && webpack --config configs/webpack.config --mode=development",
-    "build:release": "yarn generate:css_classes && webpack --config configs/webpack.config --mode=production && yarn optimize_wasm",
+    "start": "webpack-dev-server --config configs/webpack.config.js -d",
+    "start:release": "webpack-dev-server --config configs/webpack.config.js --mode=production",
+    "build": "webpack --config configs/webpack.config --mode=development",
+    "build:release": "webpack --config configs/webpack.config --mode=production && yarn optimize_wasm",
     "build:prerender": "yarn build:release && yarn prerender",
     "serve:dist": "yarn serve -s -l 8000 dist",
     "prerender": "yarn concurrently -k -s first \"yarn serve:dist\" \"wait-on http://localhost:8000/ && react-snap\"",
-    "optimize_wasm": "node scripts/optimize_wasm.js",
-    "generate:css_classes": "webpack --config configs/webpack.css_classes.config --mode=development"
+    "optimize_wasm": "node scripts/optimize_wasm.js"
   },
   "reactSnap": {
     "source": "dist",
