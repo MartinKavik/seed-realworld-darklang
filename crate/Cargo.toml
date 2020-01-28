@@ -1,0 +1,33 @@
+[package]
+version = "0.1.0"
+name = "kavik_cz"
+repository = "https://github.com/MartinKavik/kavik.cz"
+authors = ["Martin Kavík <martin@kavik.cz>"]
+description = "Personal website kavik.cz"
+categories = ["wasm", "rust", "tailwindcss", "seed", "personal", "website"]
+license = "MIT"
+readme = "./README.md"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dev-dependencies]
+wasm-bindgen-test = "^0.3.8"
+
+[dependencies]
+wasm-bindgen = "^0.2.58"
+seed = "0.5.1"
+fixed-vec-deque = "0.1.8"
+
+[dependencies.web-sys]
+version = "^0.3.35"
+features = [
+  "ScrollToOptions",
+  "Navigator",
+]
+
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
