@@ -18,7 +18,8 @@ pub mod register;
 pub mod settings;
 pub mod tag;
 
-static BASE_API_URL: &str = "https://conduit.productionready.io/api";
+static BASE_API_URL: &str =
+    "https://martinkavik-realworld.builtwithdark.com/api";
 const TIMEOUT: u32 = 5000;
 
 pub fn new(path: &str, viewer: Option<&Viewer>) -> fetch::Request {
