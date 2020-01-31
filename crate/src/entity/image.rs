@@ -1,4 +1,4 @@
-static IMAGES_BASE_URL: &str = "/assets/images";
+static IMAGES_BASE_URL: &str = "/static/images";
 
 pub struct Image(String);
 
